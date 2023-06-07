@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карта Бурятии</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .info-panel {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: white;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      display: none;
+    }
+
+    .info-panel.visible {
+      display: block;
+    }
+
+    .info-panel-close {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body class="scroll">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="republicInfo.html">Республика Бурятия</a></li>
+        <li><a href="map.html">Карта</a></li>
+        <li><a href="kitchen.html">Кухня</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <hr>
+    <div class="container">
+      <h1>Районы</h1>
+      <div class="hamburger-menu" onclick="toggleMenu(this)">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="menu">
+        <a href="#" onclick="showInfoPanel('Баргузинский район')">Баргузинский район</a>
+        <a href="#" onclick="showInfoPanel('Баунтовский район')">Баунтовский-Эвенкийский район</a>
+        <a href="#" onclick="showInfoPanel('Бичурский район')">Бичурский район</a>
+        <a href="#" onclick="showInfoPanel('Джидинский район')">Джидинский район</a>
+        <a href="#" onclick="showInfoPanel('Еравнинский район')">Еравнинский район</a>
+        <a href="#" onclick="showInfoPanel('Заиграевский район')">Заиграевский район</a>
+        <a href="#" onclick="showInfoPanel('Закаменский район')">Закаменский район</a> 
+        <a href="#" onclick="showInfoPanel('Иволгинский район')">Иволгинский район</a> 
+        <a href="#" onclick="showInfoPanel('Кабанский район')">Кабанский район</a>  
+        <a href="#" onclick="showInfoPanel('Кижингинский район')">Кижингинский район</a>
+        <a href="#" onclick="showInfoPanel('Курумканский район')">Курумканский район</a>  
+        <a href="#" onclick="showInfoPanel('Кяхтинский район')">Кяхтинский район</a> 
+        <a href="#" onclick="showInfoPanel('Муйский район')">Муйский район</a> 
+        <a href="#" onclick="showInfoPanel('Мухоршибирский район')">Мухоршибирский район</a>   
+        <a href="#" onclick="showInfoPanel('Окинский район')">Окинский район</a>
+        <a href="#" onclick="showInfoPanel('Прибайкальский район')">Прибайкальский район</a> 
+        <a href="#" onclick="showInfoPanel('Северо-Байкальский район')">Северо-Байкальский район</a>
+        <a href="#" onclick="showInfoPanel('Селенгинский район')">Селенгинский район</a> 
+        <a href="#" onclick="showInfoPanel('Тарбагатайский район')">Тарбагатайский район</a>   
+        <a href="#" onclick="showInfoPanel('Тункинский район')">Тункинский район</a>
+        <a href="#" onclick="showInfoPanel('Хоринский район')">Хоринский район</a> 
+        <!-- Добавьте остальные районы здесь -->
+      </div>
+    </div>
+    <div class="map">
+      <img src="map.jpg">
+      <button class="button first" onclick="showInfoPanel('Окинский район')"></button>
+      <span class="button-text first-t">Окинский район</span>
+      <button class="button second" onclick="showInfoPanel('Тункинский район')"></button>
+      <span class="button-text second-t">Тункинский район</span>
+      <button class="button third" onclick="showInfoPanel('Закаменский район')"></button>
+      <span class="button-text third-t">Закаменский район</span>
+      <button class="button four" onclick="showInfoPanel('Джидинский район')"></button>
+      <span class="button-text four-t">Джидийский район</span>
+      <button class="button five" onclick="showInfoPanel('Кяхтинский район')"></button>
+      <span class="button-text five-t">Кяхтинский район</span>
+      <button class="button six" onclick="showInfoPanel('Селенгинский район')"></button>
+      <span class="button-text six-t">Селенгинский район</span>
+      <button class="button seven" onclick="showInfoPanel('Бичурский район')"></button>
+      <span class="button-text seven-t">Бичурский район</span>
+      <button class="button eight" onclick="showInfoPanel('Мухоршибирский район')"></button>
+      <span class="button-text eight-t">Мухоршибирский район</span>
+      <button class="button nine" onclick="showInfoPanel('Тарбагатайский район')"></button>
+      <span class="button-text nine-t">Тарбагатайский район</span>
+      <button class="button ten" onclick="showInfoPanel('Кабанский район')"></button>
+      <span class="button-text ten-t">Кабанский район</span>
+      <button class="button eleven" onclick="showInfoPanel('Иволгинский район')"></button>
+      <span class="button-text eleven-t">Иволгинский район</span>
+      <button class="button twelf" onclick="showInfoPanel('Заиграевский район')"></button>
+      <span class="button-text twelf-t">Заиграевский район</span>
+      <button class="button thirty" onclick="showInfoPanel('Прибайкальский район')"></button>
+      <span class="button-text thirty-t">Прибайкальский район</span>
+      <button class="button fourty" onclick="showInfoPanel('Хоринский район')"></button>
+      <span class="button-text fourty-t">Хоринский район</span>
+      <button class="button fivety" onclick="showInfoPanel('Еравнинский район')"></button>
+      <span class="button-text fivety-t">Еравнинский район</span>
+      <button class="button sixty" onclick="showInfoPanel('Кижингинский район')"></button>
+      <span class="button-text sixty-t">Кижингинский район</span>
+      <button class="button seventy" onclick="showInfoPanel('Баргузинский район')"></button>
+      <span class="button-text seventy-t">Баргузинский район</span>
+      <button class="button eighty" onclick="showInfoPanel('Баунтовский район')"></button>
+      <span class="button-text eighty-t">Баунтовский район</span>
+      <button class="button ninety" onclick="showInfoPanel('Курумканский район')"></button>
+      <span class="button-text ninety-t">Курумканский район</span>
+      <button class="button twenty" onclick="showInfoPanel('Муйский район')"></button>
+      <span class="button-text twenty-t">Муйский район</span>
+      <button class="button twentyone" onclick="showInfoPanel('Северо-Байкальский район')"></button>
+      <span class="button-text twentyone-t">Северо-Байкальский район</span>
+    </div>
+    <div class="info-panel" id="infoPanel">
+      <h2 id="info-title"></h2>
+      <p id="info-description"></p>
+      <button class="close-button" onclick="hideInfoPanel()">✕</button>
+    </div>
+  </main>
+  <footer>
+    <script src="scripts.js"></script>
+    <script>
+ 
+
+    </script>
+  </footer>
+</body>
+</html>
