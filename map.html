@@ -8,28 +8,31 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css">
   <link rel="stylesheet" href="style.css">
   <style>
-    .info-panel {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background-color: white;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      display: none;
-    }
+.info-panel {
+  position: fixed;
+  width: 500px;
+  top: 20px;
+  right: 20px;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: none;
+  height: 600px; /* Пример высоты панели */
+  overflow: auto;
+}
 
-    .info-panel.visible {
-      display: block;
-    }
+.info-panel.visible {
+  display: block;
+}
 
-    .info-panel-close {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      cursor: pointer;
-    }
+.info-panel-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
   </style>
 </head>
 
@@ -126,7 +129,7 @@
     <div class="info-panel" id="infoPanel">
       <h2 id="info-title"></h2>
       <p id="info-description"></p>
-      <button class="close-button" onclick="hideInfoPanel()">✕</button>
+      <button class="close-button" onclick="closeInfoPanel()">✕</button>
     </div>
   </main>
   <footer>

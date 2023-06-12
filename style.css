@@ -95,6 +95,8 @@ z-index: 10;
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  height: 200px; /* Пример высоты панели */
+  overflow: auto;
   }
   
   .hamburger-menu.open + .menu {
@@ -202,7 +204,7 @@ color: #fff; /* Изменили цвет текста при наведении
 
   .content-block .images img {
     width: 48%; /* Изменяем ширину картинок на 48% для двух в ряд */
-    height: 320px;
+    height: 280px;
     object-fit: cover;
     box-shadow: 0px 18px 20px rgba(0, 0, 0, 0.8);
     padding-top: 4%;
@@ -289,13 +291,13 @@ color: #fff; /* Изменили цвет текста при наведении
   }
 
   .first{
-    top: 65%;
-    left: 13%;
+    top: 95vh;
+    left: 13vw;
     transform: translate(-50%, -50%);
   }
   .first-t{
-    top: 61%;
-    left: 13%;
+    top: 88vh;
+    left: 13vw;
     transform: translate(-50%, -50%);
   }
 
@@ -308,206 +310,352 @@ color: #fff; /* Изменили цвет текста при наведении
   }
 
   .second{
-    top: 75%;
-    left: 24%;
+    top: 110vh;
+    left: 24vw;
     transform: translate(-50%, -50%);
   }
   .second-t{
-    top: 71%;
-    left: 24%;
+    top: 104vh;
+    left: 24vw;
     transform: translate(-50%, -50%);
   }
   .third{
-    top: 86%;
-    left: 29%;
+    top: 126vh;
+    left: 29vw;
     transform: translate(-50%, -50%);
   }
   .third-t{
-    top: 82%;
-    left: 29%;
+    top: 120vh;
+    left: 29vw;
     transform: translate(-50%, -50%);
   }
   .four{
-    top: 86%;
-    left: 38%;
+    top: 86vh;
+    left: 38vw;
     transform: translate(-50%, -50%);
   }
   .four-t{
-    top: 90%;
-    left: 38%;
+    top: 90vh;
+    left: 38vw;
     transform: translate(-50%, -50%);
   }
   .five{
-    top: 92%;
-    left: 50%;
+    top: 92vh;
+    left: 50vw;
     transform: translate(-50%, -50%);
   }
   .five-t{
-    top: 96%;
-    left: 50%;
+    top: 96vh;
+    left: 50vw;
     transform: translate(-50%, -50%);
   }
   .six{
-    top: 82%;
-    left: 44%;
+    top: 82vh;
+    left: 44vw;
     transform: translate(-50%, -50%);
   }
   .six-t{
-    top: 78%;
-    left: 44%;
+    top: 78vh;
+    left: 44vw;
     transform: translate(-50%, -50%);
   }
   .seven{
-    top: 88%;
-    left: 52%;
+    top: 88vh;
+    left: 52vw;
     transform: translate(-50%, -50%);
   }
   .seven-t{
-    top: 88%;
-    left: 58%;
+    top: 88vh;
+    left: 58vw;
     transform: translate(-50%, -50%);
   }
   .eight{
-    top: 80%;
-    left: 52%;
+    top: 80vh;
+    left: 52vw;
     transform: translate(-50%, -50%);
   }
   .eight-t{
-    top: 80%;
-    left: 60%;
+    top: 80vh;
+    left: 60vw;
     transform: translate(-50%, -50%);
   }
   .nine{
-    top: 75%;
-    left: 51%;
+    top: 75vh;
+    left: 51vw;
     transform: translate(-50%, -50%);
   }
   .nine-t{
-    top: 75%;
-    left: 59%;
+    top: 75vh;
+    left: 59vw;
     transform: translate(-50%, -50%);
   }
   .ten{
-    top: 76%;
-    left: 37%;
+    top: 76vh;
+    left: 37vw;
     transform: translate(-50%, -50%);
   }
   .ten-t{
-    top: 72%;
-    left: 37%;
+    top: 72vh;
+    left: 37vw;
     transform: translate(-50%, -50%);
   }
   .eleven{
-    top: 73%;
-    left: 48%;
+    top: 73vh;
+    left: 48vw;
     transform: translate(-50%, -50%);
   }
   .eleven-t{
-    top: 69%;
-    left: 45%;
+    top: 69vh;
+    left: 45vw;
     transform: translate(-50%, -50%);
   }
   .twelf{
-    top: 71%;
-    left: 54%;
+    top: 71vh;
+    left: 54vw;
     transform: translate(-50%, -50%);
   }
   .twelf-t{
-    top: 71%;
-    left: 61%;
+    top: 71vh;
+    left: 61vw;
     transform: translate(-50%, -50%);
   }
   .thirty{
-    top: 61%;
-    left: 54%;
+    top: 61vh;
+    left: 54vw;
     transform: translate(-50%, -50%);
   }
   .thirty-t{
-    top: 61%;
-    left: 46%;
+    top: 61vh;
+    left: 46vw;
     transform: translate(-50%, -50%);
   }
   .fourty{
-    top: 63%;
-    left: 61%;
+    top: 63vh;
+    left: 61vw;
     transform: translate(-50%, -50%);
   }
   .fourty-t{
-    top: 59%;
-    left: 61%;
+    top: 59vh;
+    left: 61vw;
     transform: translate(-50%, -50%);
   }
   .fivety{
-    top: 60%;
-    left: 73%;
+    top: 60vh;
+    left: 73vw;
     transform: translate(-50%, -50%);
   }
   .fivety-t{
-    top: 60%;
-    left: 80%;
+    top: 60vh;
+    left: 80vw;
     transform: translate(-50%, -50%);
   }
   .sixty{
-    top: 69%;
-    left: 69%;
+    top: 69vh;
+    left: 69vw;
     transform: translate(-50%, -50%);
   }
   .sixty-t{
-    top: 69%;
-    left: 77%;
+    top: 69vh;
+    left: 77vw;
     transform: translate(-50%, -50%);
   }
   .seventy{
-    top: 49%;
-    left: 63%;
+    top: 49vh;
+    left: 63vw;
     transform: translate(-50%, -50%);
   }
   .seventy-t{
-    top: 45%;
-    left: 63%;
+    top: 45vh;
+    left: 63vw;
     transform: translate(-50%, -50%);
   }
   .eighty{
-    top: 39%;
-    left: 85%;
+    top: 39vh;
+    left: 85vw;
     transform: translate(-50%, -50%);
   }
   .eighty-t{
-    top: 35%;
-    left: 85%;
+    top: 35vh;
+    left: 85vw;
     transform: translate(-50%, -50%);
   }
   .ninety{
-    top: 32%;
-    left: 70%;
+    top: 32vh;
+    left: 70vw;
     transform: translate(-50%, -50%);
   }
   .ninety-t{
-    top: 28%;
-    left: 70%;
+    top: 28vh;
+    left: 70vw;
     transform: translate(-50%, -50%);
   }
   .twenty{
-    top: 19%;
-    left: 89%;
+    top: 19vh;
+    left: 89vw;
     transform: translate(-50%, -50%);
   }
   .twenty-t{
-    top: 15%;
-    left: 89%;
+    top: 15vh;
+    left: 89vw;
     transform: translate(-50%, -50%);
   }
   .twentyone{
-    top: 15%;
-    left: 69%;
+    top: 15vh;
+    left: 69vw;
     transform: translate(-50%, -50%);
   }
   .twentyone-t{
-    top: 11%;
-    left: 69%;
+    top: 11vh;
+    left: 69vw;
     transform: translate(-50%, -50%);
   }
 
   .bc{
     background-color: #b3b477;
   }
+
+  /* Добавьте медиа-запросы для различных размеров экрана */
+@media screen and (max-width: 768px) {
+  .first,
+  .first-t,
+  .second,
+  .second-t,
+  .third,
+  .third-t,
+  .four,
+  .four-t,
+  .five,
+  .five-t,
+  .six,
+  .six-t,
+  .seven,
+  .seven-t,
+  .eight,
+  .eight-t,
+  .nine,
+  .nine-t,
+  .ten,
+  .ten-t,
+  .eleven,
+  .eleven-t,
+  .twelf,
+  .twelf-t,
+  .thirty,
+  .thirty-t,
+  .fourty,
+  .fourty-t,
+  .fivety,
+  .fivety-t,
+  .sixty,
+  .sixty-t,
+  .seventy,
+  .seventy-t,
+  .eighty,
+  .eighty-t,
+  .ninety,
+  .ninety-t,
+  .twenty,
+  .twenty-t,
+  .twentyone,
+  .twentyone-t {
+    top: 20vh;
+    left: 20vw;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .second,
+  .second-t,
+  .third,
+  .third-t,
+  .four,
+  .four-t,
+  .five,
+  .five-t,
+  .six,
+  .six-t,
+  .seven,
+  .seven-t,
+  .eight,
+  .eight-t,
+  .nine,
+  .nine-t,
+  .ten,
+  .ten-t,
+  .eleven,
+  .eleven-t,
+  .twelf,
+  .twelf-t,
+  .thirty,
+  .thirty-t,
+  .fourty,
+  .fourty-t,
+  .fivety,
+  .fivety-t,
+  .sixty,
+  .sixty-t,
+  .seventy,
+  .seventy-t,
+  .eighty,
+  .eighty-t,
+  .ninety,
+  .ninety-t,
+  .twenty,
+  .twenty-t,
+  .twentyone,
+  .twentyone-t {
+    top: 20vh;
+    left: 20vw;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .first,
+  .first-t,
+  .second,
+  .second-t,
+  .third,
+  .third-t,
+  .four,
+  .four-t,
+  .five,
+  .five-t,
+  .six,
+  .six-t,
+  .seven,
+  .seven-t,
+  .eight,
+  .eight-t,
+  .nine,
+  .nine-t,
+  .ten,
+  .ten-t,
+  .eleven,
+  .eleven-t,
+  .twelf,
+  .twelf-t,
+  .thirty,
+  .thirty-t,
+  .fourty,
+  .fourty-t,
+  .fivety,
+  .fivety-t,
+  .sixty,
+  .sixty-t,
+  .seventy,
+  .seventy-t,
+  .eighty,
+  .eighty-t,
+  .ninety,
+  .ninety-t,
+  .twenty,
+  .twenty-t,
+  .twentyone,
+  .twentyone-t {
+    top: 20vh;
+    left: 20vw;
+    transform: translate(-50%, -50%);
+  }
+}
