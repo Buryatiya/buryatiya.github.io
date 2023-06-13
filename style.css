@@ -282,13 +282,21 @@ color: #fff; /* Изменили цвет текста при наведении
     left: 50%;
     transform: translateX(-50%);
     color: black;
-    font-size: 20px;
+    font-size: 17px;
+    align-items: center;
+    height: 13px;
     font-weight: bold;
     text-align: center;
-    border-radius: 50%;
+    border-radius: 10px;
     background-color: rgb(0, 187, 125);
     outline: 1px solid black;
     padding: 10px;
+  }
+  
+  .public {
+    background-color: rgb(10, 71, 107);
+    color: white;
+    height: 820px;
   }
 
   .first{
@@ -301,22 +309,13 @@ color: #fff; /* Изменили цвет текста при наведении
     left: 13vw;
     transform: translate(-50%, -50%);
   }
-
-
-
-  .public {
-    background-color: rgb(10, 71, 107);
-    color: white;
-    height: 820px;
-  }
-
   .second{
     top: 110vh;
     left: 24vw;
     transform: translate(-50%, -50%);
   }
   .second-t{
-    top: 104vh;
+    top: 103vh;
     left: 24vw;
     transform: translate(-50%, -50%);
   }
@@ -326,187 +325,187 @@ color: #fff; /* Изменили цвет текста при наведении
     transform: translate(-50%, -50%);
   }
   .third-t{
-    top: 120vh;
+    top: 119vh;
     left: 29vw;
     transform: translate(-50%, -50%);
   }
   .four{
-    top: 86vh;
-    left: 38vw;
+    top: 128vh;
+    left: 36vw;
     transform: translate(-50%, -50%);
   }
   .four-t{
-    top: 90vh;
-    left: 38vw;
+    top: 136vh;
+    left: 36vw;
     transform: translate(-50%, -50%);
   }
   .five{
-    top: 92vh;
+    top: 136vh;
     left: 50vw;
     transform: translate(-50%, -50%);
   }
   .five-t{
-    top: 96vh;
-    left: 50vw;
+    top: 143vh;
+    left: 55vw;
     transform: translate(-50%, -50%);
   }
   .six{
-    top: 82vh;
+    top: 114vh;
     left: 44vw;
     transform: translate(-50%, -50%);
   }
   .six-t{
-    top: 78vh;
+    top: 121vh;
     left: 44vw;
     transform: translate(-50%, -50%);
   }
   .seven{
-    top: 88vh;
+    top: 128vh;
     left: 52vw;
     transform: translate(-50%, -50%);
   }
   .seven-t{
-    top: 88vh;
-    left: 58vw;
+    top: 128vh;
+    left: 61vw;
     transform: translate(-50%, -50%);
   }
   .eight{
-    top: 80vh;
-    left: 52vw;
+    top: 117vh;
+    left: 53vw;
     transform: translate(-50%, -50%);
   }
   .eight-t{
-    top: 80vh;
-    left: 60vw;
+    top: 117vh;
+    left: 64vw;
     transform: translate(-50%, -50%);
   }
   .nine{
-    top: 75vh;
+    top: 110vh;
     left: 51vw;
     transform: translate(-50%, -50%);
   }
   .nine-t{
-    top: 75vh;
-    left: 59vw;
+    top: 110vh;
+    left: 61vw;
     transform: translate(-50%, -50%);
   }
   .ten{
-    top: 76vh;
+    top: 112vh;
     left: 37vw;
     transform: translate(-50%, -50%);
   }
   .ten-t{
-    top: 72vh;
+    top: 105vh;
     left: 37vw;
     transform: translate(-50%, -50%);
   }
   .eleven{
-    top: 73vh;
+    top: 106vh;
     left: 48vw;
     transform: translate(-50%, -50%);
   }
   .eleven-t{
-    top: 69vh;
+    top: 98vh;
     left: 45vw;
     transform: translate(-50%, -50%);
   }
   .twelf{
-    top: 71vh;
-    left: 54vw;
+    top: 104vh;
+    left: 55vw;
     transform: translate(-50%, -50%);
   }
   .twelf-t{
-    top: 71vh;
-    left: 61vw;
+    top: 98vh;
+    left: 60vw;
     transform: translate(-50%, -50%);
   }
   .thirty{
-    top: 61vh;
+    top: 90vh;
     left: 54vw;
     transform: translate(-50%, -50%);
   }
   .thirty-t{
-    top: 61vh;
-    left: 46vw;
+    top: 90vh;
+    left: 44vw;
     transform: translate(-50%, -50%);
   }
   .fourty{
-    top: 63vh;
+    top: 90vh;
     left: 61vw;
     transform: translate(-50%, -50%);
   }
   .fourty-t{
-    top: 59vh;
+    top: 83vh;
     left: 61vw;
     transform: translate(-50%, -50%);
   }
   .fivety{
-    top: 60vh;
+    top: 87vh;
     left: 73vw;
     transform: translate(-50%, -50%);
   }
   .fivety-t{
-    top: 60vh;
-    left: 80vw;
+    top: 87vh;
+    left: 82vw;
     transform: translate(-50%, -50%);
   }
   .sixty{
-    top: 69vh;
+    top: 102vh;
     left: 69vw;
     transform: translate(-50%, -50%);
   }
   .sixty-t{
-    top: 69vh;
-    left: 77vw;
+    top: 102vh;
+    left: 79vw;
     transform: translate(-50%, -50%);
   }
   .seventy{
-    top: 49vh;
+    top: 70vh;
     left: 63vw;
     transform: translate(-50%, -50%);
   }
   .seventy-t{
-    top: 45vh;
+    top: 63vh;
     left: 63vw;
     transform: translate(-50%, -50%);
   }
   .eighty{
-    top: 39vh;
+    top: 50vh;
     left: 85vw;
     transform: translate(-50%, -50%);
   }
   .eighty-t{
-    top: 35vh;
+    top: 57vh;
     left: 85vw;
     transform: translate(-50%, -50%);
   }
   .ninety{
-    top: 32vh;
+    top: 45vh;
     left: 70vw;
     transform: translate(-50%, -50%);
   }
   .ninety-t{
-    top: 28vh;
+    top: 38vh;
     left: 70vw;
     transform: translate(-50%, -50%);
   }
   .twenty{
-    top: 19vh;
+    top: 25vh;
     left: 89vw;
     transform: translate(-50%, -50%);
   }
   .twenty-t{
-    top: 15vh;
+    top: 18vh;
     left: 89vw;
     transform: translate(-50%, -50%);
   }
   .twentyone{
-    top: 15vh;
+    top: 20vh;
     left: 69vw;
     transform: translate(-50%, -50%);
   }
   .twentyone-t{
-    top: 11vh;
+    top: 13vh;
     left: 69vw;
     transform: translate(-50%, -50%);
   }
@@ -612,7 +611,7 @@ color: #fff; /* Изменили цвет текста при наведении
   }
 }
 
-@media screen and (max-width: 1068px) {
+@media screen and (max-width: 1200px) {
   .first,
   .first-t,
   .second,

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <style>
 .info-panel {
+  white-space: pre-line;
   position: fixed;
   width: 500px;
   top: 20px;
@@ -57,7 +58,7 @@
         <span class="bar"></span>
       </div>
       <div class="menu">
-        <a href="#" onclick="showInfoPanel('Баргузинский район')">Баргузинский район</a>
+        <a href="#" id="info-button-1" onclick="showInfoPanel('Баргузинский район')">Баргузинский район</a>
         <a href="#" onclick="showInfoPanel('Баунтовский район')">Баунтовский-Эвенкийский район</a>
         <a href="#" onclick="showInfoPanel('Бичурский район')">Бичурский район</a>
         <a href="#" onclick="showInfoPanel('Джидинский район')">Джидинский район</a>
@@ -90,7 +91,7 @@
       <button class="button third" onclick="showInfoPanel('Закаменский район')"></button>
       <span class="button-text third-t">Закаменский район</span>
       <button class="button four" onclick="showInfoPanel('Джидинский район')"></button>
-      <span class="button-text four-t">Джидийский район</span>
+      <span class="button-text four-t">Джидинский район</span>
       <button class="button five" onclick="showInfoPanel('Кяхтинский район')"></button>
       <span class="button-text five-t">Кяхтинский район</span>
       <button class="button six" onclick="showInfoPanel('Селенгинский район')"></button>
@@ -115,7 +116,7 @@
       <span class="button-text fivety-t">Еравнинский район</span>
       <button class="button sixty" onclick="showInfoPanel('Кижингинский район')"></button>
       <span class="button-text sixty-t">Кижингинский район</span>
-      <button class="button seventy" onclick="showInfoPanel('Баргузинский район')"></button>
+      <button id="info-button-1" class="button seventy" onclick="showInfoPanel('Баргузинский район')"></button>
       <span class="button-text seventy-t">Баргузинский район</span>
       <button class="button eighty" onclick="showInfoPanel('Баунтовский район')"></button>
       <span class="button-text eighty-t">Баунтовский район</span>
@@ -126,8 +127,10 @@
       <button class="button twentyone" onclick="showInfoPanel('Северо-Байкальский район')"></button>
       <span class="button-text twentyone-t">Северо-Байкальский район</span>
     </div>
+
     <div class="info-panel" id="infoPanel">
       <h2 id="info-title"></h2>
+      <div id="info-text"></div>
       <p id="info-description"></p>
       <button class="close-button" onclick="closeInfoPanel()">✕</button>
     </div>
